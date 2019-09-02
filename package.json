@@ -9,8 +9,8 @@
     "type": "git",
     "url": "https://github.com/farynam/mfitbs-node-vagrant-run.git"
   },
-
-  "keywords": ["run project on vm",
+  "keywords": [
+    "run project on vm",
     "run project on vagrant",
     "run on vagrant",
     "run on vm",
@@ -24,7 +24,6 @@
     "remote node",
     "remote node.js"
   ],
-
   "dependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.4",
@@ -35,7 +34,8 @@
   },
   "devDependencies": {
     "@babel/polyfill": "7.4.4",
-    "gulp": "4.0.2"
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0"
   },
   "scripts": {
     "pub": "gulp",
