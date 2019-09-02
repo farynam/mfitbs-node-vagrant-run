@@ -1,0 +1,58 @@
+{
+  "name": "mfitbs-node-vagrant-run",
+  "version": "1.0.0",
+  "description": "module run package",
+  "main": "lib/runner.js",
+  "author": "Marcin Faryna",
+  "license": "Apache License 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farynam/mfitbs-node-vagrant-run.git"
+  },
+
+  "keywords": ["run project on vm",
+    "run project on vagrant",
+    "run on vagrant",
+    "run on vm",
+    "run node on vm",
+    "run node on vagrant",
+    "vagrant project",
+    "dev on vagrant",
+    "devel on vagrant",
+    "dev on vm",
+    "devel on vm",
+    "remote node",
+    "remote node.js"
+  ],
+
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "7.5.0",
+    "@babel/preset-env": "7.4.5",
+    "@babel/register": "7.4.0",
+    "mfitbs-js-utils": "1.0.11"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "7.4.4",
+    "gulp": "4.0.2"
+  },
+  "scripts": {
+    "pub": "gulp",
+    "sync": "node src/js/lib/sync.js",
+    "runapp": "node src/js/run/runVagrant.js src/example/ex.js"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry"
+        }
+      ]
+    ],
+    "ignore": [
+      "**/excl/*"
+    ]
+  }
+}
