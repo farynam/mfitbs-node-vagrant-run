@@ -1,6 +1,6 @@
 {
   "name": "mfitbs-node-vagrant-run",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "module run package",
   "main": "lib/runner.js",
   "author": "Marcin Faryna",
